@@ -11,5 +11,6 @@ public class Main2 {
         String str = "Hello";
         char sym = '*';
         boolean isTrue = true; // true or false
+
     }
 }
