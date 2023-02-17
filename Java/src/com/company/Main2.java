@@ -12,5 +12,7 @@ public class Main2 {
         char sym = '*';
         boolean isTrue = true; // true or false
 
+        System.out.println(num);
+
     }
 }
