@@ -9,30 +9,43 @@ public class Main7 {
         char sym;
         System.out.println("Enter first number ");
         num = scn.nextInt();
-        System.out.println("Enter second number ");
-        num2 = scn.nextInt();
         System.out.println("Please enter an operation(+,-,*,/):" );
         sym = scn.next().charAt(0);
-        System.out.println("Sym is " + sym);
-        switch(sym){
-            case '+' :
-                result = num + num2;
-                System.out.println(result);
+
+        while(true){
+            if(sym!= '+' && sym != '-' && sym != '*' && sym != '/'){
+                System.out.println("Incorrect symbol! Please, try again(+,-,*,/)");
+                sym = scn.next().charAt(0);
+            }else{
+                System.out.println("Enter second number ");
+                num2 = scn.nextInt();
+                switch(sym){
+                    case '+' :
+                        result = num + num2;
+                        System.out.println(result);
+                        break;
+                    case '-':
+                        result = num - num2;
+                        System.out.println(result);
+                        break;
+                    case '*':
+                        result = num * num2;
+                        System.out.println(result);
+                        break;
+                    case '/':
+                        result = num / num2;
+                        System.out.println(result);
+                        break;
+
+
+                }
                 break;
-            case '-':
-                result = num - num2;
-                System.out.println(result);
-                break;
-            case '*':
-                result = num * num2;
-                System.out.println(result);
-                break;
-            case '/':
-                result = num / num2;
-                System.out.println(result);
-                break;
-            default:
-                System.out.println("Incorrect symbol");
+            }
+
+
+
         }
+
+
     }
 }
