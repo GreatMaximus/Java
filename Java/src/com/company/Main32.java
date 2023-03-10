@@ -2,8 +2,8 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Matrix2x2 {
-    public static void main (String args) {
+public class Main32 {
+    public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter the number of lines of first matrix");
         int a = scn.nextInt();
@@ -29,7 +29,7 @@ public class Matrix2x2 {
         for (int i = 0; i < a; i++) {
             for (int u = 0; u < c; u++) {
                 for (int j = 0; j < b; j++) {
-                    MatrixAB[i][u] = MatrixA[i][j] * MatrixB[j][u];
+                    MatrixAB[i][u]+= MatrixA[i][j] * MatrixB[j][u];
                 }
             }
         }
