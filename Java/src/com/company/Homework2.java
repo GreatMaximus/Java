@@ -8,9 +8,11 @@ public class Homework2 {
         String [] array1 = new String [array.length];
 
         for(int i = array.length-1; i >=0;i--){
-            System.out.print(array[i] + " ");
+            array1[array.length-1-i]=array[i];
+
 
         }
+        System.out.print(Arrays.toString(array1));
         }
 }
 
