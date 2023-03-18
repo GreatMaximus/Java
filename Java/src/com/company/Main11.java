@@ -8,7 +8,7 @@ public class Main11 {
         System.out.print(num1 + " " + num2 + " ");
         for( int i = 0; i < 8; i++){
             result = num1 +num2;
-            System.out.print(result + " ");
+            System.out.println(result + " ");
             num1 = num2;
             num2 = result;
 
