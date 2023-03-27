@@ -1,2 +1,7 @@
-package com.company;public class Figure {
+package com.company;
+
+public class Figure {
+    public void draw(){
+
+    }
 }
