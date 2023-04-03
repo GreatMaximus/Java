@@ -1,7 +1,7 @@
 package com.company;
 
 public class MyInterface2 implements ArrayInterface{
-    int[] a = new int[5];
+    int[] a = new int[3];
     int index = 0;
 
     @Override

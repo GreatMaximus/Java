@@ -1,45 +1,40 @@
 package com.company;
 
 public class MyPult implements MyPultInterface {
-    String TVOn;
-    String TVOff;
-    String VolumePlus;
-    String VolumeMinus;
-    String ChannelPlus;
-    String ChannelMinus;
 
-    MyPult (String TVOn, String TVOff){
-        this.TVOn = TVOn;
-        this.TVOff = TVOff;
+    @Override
+    public void TVOn() {
+        System.out.println("TV on");
+
     }
 
     @Override
-    public String TVOn(String TVOn) {
-        return null;
+    public void TVOff(String TVOff) {
+        System.out.println("TV off");
+
     }
 
     @Override
-    public String TVOff(String TVOff) {
-        return null;
+    public void VolumePlus() {
+        System.out.println("Volume +");
+
     }
 
     @Override
-    public String VolumePlus(String VolumePlus) {
-        return null;
+    public void VolumeMinus() {
+        System.out.println("Volume -");
+
     }
 
     @Override
-    public String VolumeMinus(String VolumeMinus) {
-        return null;
+    public void ChannelPlus() {
+        System.out.println("Channel +");
+
     }
 
     @Override
-    public String ChannelPlus(String ChannelPlus) {
-        return null;
-    }
+    public void ChannelMinus() {
+        System.out.println("Channel -");
 
-    @Override
-    public String ChannelMinus(String ChanelMinus) {
-        return null;
     }
 }
